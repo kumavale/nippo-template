@@ -1,0 +1,25 @@
+name: Create today's report file
+
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create today's report file
+        env:
+          TZ: "Asia/Tokyo"
+        shell: bash
+        run: |
+          ./script/diary.sh
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "append $(date +'%Y-%m-%d')'s report file"
+          git push
