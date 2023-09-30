@@ -31,7 +31,7 @@ Actions の `schedule` を利用してデフォルトでは毎日0時にその�
 ### 日報ファイル名
 
 デフォルトでは `date +"%Y/%m/%Y-%m-%d.md"` のフォーマットで作成されます。  
-それを変更したい場合は、[diary.sh](https://github.com/kumavale/nippo-template/blob/main/scripts/diary.sh) を適宜修正してください。
+それを変更したい場合は、[diary.sh](./scripts/diary.sh) を適宜修正してください。
 
 #### 例：名前_日付.md
 
