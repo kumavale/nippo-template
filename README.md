@@ -11,14 +11,14 @@
 
 2. `template.md` に日報のテンプレートを作成
 
-3. 初回は [Actions のページ](https://github.com/kumavale/nippo-template/actions/workflows/diary.yml) から、「Run workflow」を手動で実行。
+3. 初回は [Actions のページ](../../actions/workflows/diary.yml) から、「Run workflow」を手動で実行。
 
 ## 拡張
 
 ### 日報ファイル作成
 
 Actions の `schedule` を利用してデフォルトでは毎日0時にその日の日報ファイルを作成します。  
-それを変更したい場合は、[POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07) に従って [diary.yml](https://github.com/kumavale/nippo-template/blob/main/.github/workflows/diary.yml#L5) を修正してください。
+それを変更したい場合は、[POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07) に従って [diary.yml](./.github/workflows/diary.yml#L5) を修正してください。
 
 ※ 時間の指定は UTC になります
 
