@@ -7,11 +7,11 @@
 
 ## 使い方
 
-1. [ここをクリック](https://github.com/new?template_name=nippo-template&template_owner=kumavale) して、リポジトリを作成。
+1. [ここをクリック](https://github.com/new?template_name=nippo-template&template_owner=kumavale) してリポジトリを作成
 
 2. `template.md` に日報のテンプレートを作成
 
-3. 初回は [Actions のページ](../../actions/workflows/diary.yml) から、「Run workflow」を手動で実行。
+3. 初回は [Actions のページ](../../actions/workflows/diary.yml) から「Run workflow」を手動で実行
 
 ## 拡張
 
@@ -38,6 +38,10 @@ Actions の `schedule` を利用してデフォルトでは毎日0時にその�
 ```
 date +"%Y/%m/kumavale_%Y-%m-%d.md"
 ```
+
+### デプロイ
+
+[mdBook](https://github.com/rust-lang/mdBook) 等を利用して静的サイトとしてデプロイすることも可能です。
 
 ## コントリビューション
 
